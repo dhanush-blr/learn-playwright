@@ -1,6 +1,8 @@
 # JavaScript & TypeScript Learning Journey 🚀
 
-A curated collection of programs I'm writing to learn JavaScript and TypeScript, from the ground up.
+A curated collection of programs I'm writing to learn JavaScript and TypeScript, from the ground up. Each chapter introduces a new concept with a minimal, focused example — no fluff, just the essentials. Complementary `iq-notes` break down related theory in side-by-side comparison tables.
+
+> Started as a Playwright learning repo, evolved into a broader JS/TS learning journey.
 
 ## Structure
 
