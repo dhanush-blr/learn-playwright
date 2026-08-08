@@ -59,12 +59,12 @@ learn-playwright/
 | 05 | [Operators](./05_chapter_operators/) | Arithmetic, comparison, logical, ternary, typeof, null coalescing | 25 |
 | 06 | [Statements](./06_chapter_statement/) | `if / else`, multiple conditions | 3 |
 | 07 | [Switch](./07_chapter_switch/) | `switch`, grouped cases, real-world simulation | 9 |
-| 08 | [User Inputs](./08_chapter_userinputs/) | `readline`, `prompt`, `fs` | 4 |
+| 08 | [User Inputs](./08_chapter_userinputs/) | `readline`, `prompt`, `fs` | 5 |
 | 09 | [Loops](./09_chapter_loops/) | `for`, `while`, `do-while`, nested loops, modulo | 12 |
 | 10 | [Arrays](./10_chapter_Arrays/) | CRUD, search, sort, slice, concat, destructuring, spread | 16 |
 | 11 | [Functions](./11_chapter_function/) | All 4 function types, arrow fns, hoisting, TDZ, IIFE | 24 |
 | 12 | [Function Closures](./12_chapter_function_closure/) | Scope, closures, execution context, real examples | 5 |
-| 13 | [Strings](./13_string/) | Searching, slicing, templates | 3 |
+| 13 | [Strings](./13_string/) | Searching, slicing, templates, string methods | 8 |
 
 > **Total: 114 lesson files** across 13 chapters.
 
