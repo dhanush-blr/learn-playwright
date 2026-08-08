@@ -2,8 +2,8 @@
 
 > *Started as a Playwright repo — evolved into a full JS curriculum, built one concept at a time.*
 
-[![Progress](https://img.shields.io/badge/Chapters%20Completed-11-brightgreen?style=flat-square)](#-chapters)
-[![Files](https://img.shields.io/badge/Lessons-105%2B-blue?style=flat-square)](#-chapters)
+[![Progress](https://img.shields.io/badge/Chapters%20Completed-12-brightgreen?style=flat-square)](#-chapters)
+[![Files](https://img.shields.io/badge/Lessons-111-blue?style=flat-square)](#-chapters)
 [![Node](https://img.shields.io/badge/Node.js-v18%2B-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![Language](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
@@ -33,6 +33,7 @@ learn-playwright/
 ├── 📁 09_chapter_loops/             ← for, while, do-while, nested
 ├── 📁 10_chapter_Arrays/            ← Arrays — all operations (16 files)
 ├── 📁 11_chapter_function/          ← Functions, hoisting, var/let/const
+├── 📁 12_chapter_function_closure/  ← Scope, closures, function execution context
 │
 ├── 📁 hacker_rank/                  ← HackerRank practice problems
 ├── 📁 iq-notes/                     ← Concept comparison reference cards
@@ -59,8 +60,9 @@ learn-playwright/
 | 09 | [Loops](./09_chapter_loops/) | `for`, `while`, `do-while`, nested loops, modulo | 12 |
 | 10 | [Arrays](./10_chapter_Arrays/) | CRUD, search, sort, slice, concat, destructuring, spread | 16 |
 | 11 | [Functions](./11_chapter_function/) | All 4 function types, arrow fns, hoisting, TDZ, IIFE | 24 |
+| 12 | [Function Closures](./12_chapter_function_closure/) | Scope, closures, execution context, real examples | 5 |
 
-> **Total: 105+ lesson files** across 11 chapters.
+> **Total: 111 lesson files** across 12 chapters.
 
 ---
 
@@ -102,6 +104,7 @@ node 10_chapter_Arrays/79_destructing.js
 - [x] Loops — `for`, `while`, `do-while`, nested
 - [x] Arrays — full coverage (CRUD, search, sort, spread, destructuring)
 - [x] Functions — all types, hoisting, TDZ, `var` vs `let` vs `const`
+- [x] Function Closures — scope, lexical environment, closures, real examples
 
 ### 🔜 Up Next
 - [ ] Objects — creation, methods, `this`, destructuring
