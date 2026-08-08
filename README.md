@@ -2,8 +2,8 @@
 
 > *Started as a Playwright repo — evolved into a full JS curriculum, built one concept at a time.*
 
-[![Progress](https://img.shields.io/badge/Chapters%20Completed-12-brightgreen?style=flat-square)](#-chapters)
-[![Files](https://img.shields.io/badge/Lessons-111-blue?style=flat-square)](#-chapters)
+[![Progress](https://img.shields.io/badge/Chapters%20Completed-13-brightgreen?style=flat-square)](#-chapters)
+[![Files](https://img.shields.io/badge/Lessons-114-blue?style=flat-square)](#-chapters)
 [![Node](https://img.shields.io/badge/Node.js-v18%2B-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![Language](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
@@ -12,6 +12,8 @@
 ## 📖 What is this?
 
 A hands-on, chapter-by-chapter JavaScript curriculum — written as I learn. Every file is a focused example, not a tutorial copy-paste. The `iq-notes/` folder pairs theory with side-by-side comparison tables for interview prep.
+
+This repo now covers core JavaScript from basics through functions, closures, and strings with practical lessons for every concept.
 
 **Philosophy:** One concept per file. No fluff. Build intuition before moving on.
 
@@ -34,6 +36,7 @@ learn-playwright/
 ├── 📁 10_chapter_Arrays/            ← Arrays — all operations (16 files)
 ├── 📁 11_chapter_function/          ← Functions, hoisting, var/let/const
 ├── 📁 12_chapter_function_closure/  ← Scope, closures, function execution context
+├── 📁 13_string/                    ← Strings, searching, slicing, templates
 │
 ├── 📁 hacker_rank/                  ← HackerRank practice problems
 ├── 📁 iq-notes/                     ← Concept comparison reference cards
@@ -61,8 +64,9 @@ learn-playwright/
 | 10 | [Arrays](./10_chapter_Arrays/) | CRUD, search, sort, slice, concat, destructuring, spread | 16 |
 | 11 | [Functions](./11_chapter_function/) | All 4 function types, arrow fns, hoisting, TDZ, IIFE | 24 |
 | 12 | [Function Closures](./12_chapter_function_closure/) | Scope, closures, execution context, real examples | 5 |
+| 13 | [Strings](./13_string/) | Searching, slicing, templates | 3 |
 
-> **Total: 111 lesson files** across 12 chapters.
+> **Total: 114 lesson files** across 13 chapters.
 
 ---
 
@@ -105,6 +109,7 @@ node 10_chapter_Arrays/79_destructing.js
 - [x] Arrays — full coverage (CRUD, search, sort, spread, destructuring)
 - [x] Functions — all types, hoisting, TDZ, `var` vs `let` vs `const`
 - [x] Function Closures — scope, lexical environment, closures, real examples
+- [x] Strings — searching, slicing, templates
 
 ### 🔜 Up Next
 - [ ] Objects — creation, methods, `this`, destructuring
