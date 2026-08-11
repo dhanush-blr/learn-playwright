@@ -37,6 +37,7 @@ learn-playwright/
 ├── 📁 11_chapter_function/          ← Functions, hoisting, var/let/const
 ├── 📁 12_chapter_function_closure/  ← Scope, closures, function execution context
 ├── 📁 13_string/                    ← Strings, searching, slicing, templates
+├── 📁 15_multi_dimensions_array/    ← Multi-dimensional arrays, nested loops, pattern printing
 │
 ├── 📁 hacker_rank/                  ← HackerRank practice problems
 ├── 📁 iq-notes/                     ← Concept comparison reference cards
@@ -65,8 +66,9 @@ learn-playwright/
 | 11 | [Functions](./11_chapter_function/) | All 4 function types, arrow fns, hoisting, TDZ, IIFE | 24 |
 | 12 | [Function Closures](./12_chapter_function_closure/) | Scope, closures, execution context, real examples | 5 |
 | 13 | [Strings](./13_string/) | Searching, slicing, templates, string methods | 8 |
+| 15 | [Multi-dimensional Arrays](./15_multi_dimensions_array/) | 2D arrays, nested loops, pattern printing | 6 |
 
-> **Total: 114 lesson files** across 13 chapters.
+> **Total: 120 lesson files** across 13 chapters.
 
 ---
 
@@ -110,6 +112,7 @@ node 10_chapter_Arrays/79_destructing.js
 - [x] Functions — all types, hoisting, TDZ, `var` vs `let` vs `const`
 - [x] Function Closures — scope, lexical environment, closures, real examples
 - [x] Strings — searching, slicing, templates
+- [x] Multi-dimensional arrays — nested arrays, matrix loops, print patterns
 
 ### 🔜 Up Next
 - [ ] Objects — creation, methods, `this`, destructuring
