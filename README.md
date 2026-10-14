@@ -2,8 +2,8 @@
 
 > *Started as a Playwright repo — evolved into a full JS curriculum, built one concept at a time.*
 
-[![Progress](https://img.shields.io/badge/Chapters%20Completed-13-brightgreen?style=flat-square)](#-chapters)
-[![Files](https://img.shields.io/badge/Lessons-114-blue?style=flat-square)](#-chapters)
+[![Progress](https://img.shields.io/badge/Chapters%20Completed-15-brightgreen?style=flat-square)](#-chapters)
+[![Files](https://img.shields.io/badge/Lessons-131-blue?style=flat-square)](#-chapters)
 [![Node](https://img.shields.io/badge/Node.js-v18%2B-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![Language](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
@@ -13,7 +13,7 @@
 
 A hands-on, chapter-by-chapter JavaScript curriculum — written as I learn. Every file is a focused example, not a tutorial copy-paste. The `iq-notes/` folder pairs theory with side-by-side comparison tables for interview prep.
 
-This repo now covers core JavaScript from basics through functions, closures, and strings with practical lessons for every concept.
+This repo now covers core JavaScript from basics through functions, closures, strings, objects, and multi-dimensional arrays with practical lessons for every concept.
 
 **Philosophy:** One concept per file. No fluff. Build intuition before moving on.
 
@@ -24,27 +24,28 @@ This repo now covers core JavaScript from basics through functions, closures, an
 ```
 learn-playwright/
 │
-├── 📁 01_chapter_javascript/        ← Hello World
-├── 📁 02_chapter_javascript/        ← Variables & let
-├── 📁 03_chapter_Identifier/        ← Identifiers, naming rules, comments
-├── 📁 04_chapter_literal/           ← Literals, null, undefined, numbers
-├── 📁 05_chapter_operators/         ← All operators (25 files)
-├── 📁 06_chapter_statement/         ← if / else statements
-├── 📁 07_chapter_switch/            ← switch, grouping, real-world use
-├── 📁 08_chapter_userinputs/        ← readline, prompt, fs input
-├── 📁 09_chapter_loops/             ← for, while, do-while, nested
-├── 📁 10_chapter_Arrays/            ← Arrays — all operations (16 files)
-├── 📁 11_chapter_function/          ← Functions, hoisting, var/let/const
-├── 📁 12_chapter_function_closure/  ← Scope, closures, function execution context
-├── 📁 13_string/                    ← Strings, searching, slicing, templates
-├── 📁 15_multi_dimensions_array/    ← Multi-dimensional arrays, nested loops, pattern printing
+├── 📁 01_chapter_hello_world/        ← Hello World
+├── 📁 02_chapter_variables/          ← Variables & let
+├── 📁 03_chapter_identifiers/        ← Identifiers, naming rules, comments
+├── 📁 04_chapter_literals/           ← Literals, null, undefined, numbers
+├── 📁 05_chapter_operators/          ← All operators (25 files)
+├── 📁 06_chapter_statements/         ← if / else statements
+├── 📁 07_chapter_switch/             ← switch, grouping, real-world use
+├── 📁 08_chapter_user_inputs/        ← readline, prompt, fs input
+├── 📁 09_chapter_loops/              ← for, while, do-while, nested
+├── 📁 10_chapter_arrays/             ← Arrays — all operations (16 files)
+├── 📁 11_chapter_functions/          ← Functions, hoisting, var/let/const
+├── 📁 12_chapter_function_closures/  ← Scope, closures, function execution context
+├── 📁 13_chapter_strings/            ← Strings, searching, slicing, templates
+├── 📁 14_chapter_objects/            ← Objects, properties, functions, call by reference
+├── 📁 15_chapter_multi_dim_arrays/   ← Multi-dimensional arrays, nested loops, pattern printing
 │
-├── 📁 hacker_rank/                  ← HackerRank practice problems
-├── 📁 iq-notes/                     ← Concept comparison reference cards
-│   ├── README.md                    ← Template for adding new notes
+├── 📁 hacker_rank/                   ← HackerRank practice problems
+├── 📁 iq-notes/                      ← Concept comparison reference cards
+│   ├── README.md                     ← Template for adding new notes
 │   └── source-vs-bytecode-vs-binary.md
 │
-└── README.md                        ← you are here
+└── README.md                         ← you are here
 ```
 
 ---
@@ -53,22 +54,23 @@ learn-playwright/
 
 | # | Chapter | Topics Covered | Files |
 |---|---------|----------------|-------|
-| 01 | [JavaScript Basics](./01_chapter_javascript/) | Hello World, `console.log` | 1 |
-| 02 | [Variables](./02_chapter_javascript/) | `let` declaration and scope | 1 |
-| 03 | [Identifiers](./03_chapter_Identifier/) | Naming rules, comments, IQ prep | 4 |
-| 04 | [Literals](./04_chapter_literal/) | String, number, null, undefined | 6 |
+| 01 | [JavaScript Basics](./01_chapter_hello_world/) | Hello World, `console.log` | 1 |
+| 02 | [Variables](./02_chapter_variables/) | `let` declaration and scope | 1 |
+| 03 | [Identifiers](./03_chapter_identifiers/) | Naming rules, comments, IQ prep | 4 |
+| 04 | [Literals](./04_chapter_literals/) | String, number, null, undefined | 6 |
 | 05 | [Operators](./05_chapter_operators/) | Arithmetic, comparison, logical, ternary, typeof, null coalescing | 25 |
-| 06 | [Statements](./06_chapter_statement/) | `if / else`, multiple conditions | 3 |
+| 06 | [Statements](./06_chapter_statements/) | `if / else`, multiple conditions | 3 |
 | 07 | [Switch](./07_chapter_switch/) | `switch`, grouped cases, real-world simulation | 9 |
-| 08 | [User Inputs](./08_chapter_userinputs/) | `readline`, `prompt`, `fs` | 5 |
+| 08 | [User Inputs](./08_chapter_user_inputs/) | `readline`, `prompt`, `fs` | 5 |
 | 09 | [Loops](./09_chapter_loops/) | `for`, `while`, `do-while`, nested loops, modulo | 12 |
-| 10 | [Arrays](./10_chapter_Arrays/) | CRUD, search, sort, slice, concat, destructuring, spread | 16 |
-| 11 | [Functions](./11_chapter_function/) | All 4 function types, arrow fns, hoisting, TDZ, IIFE | 24 |
-| 12 | [Function Closures](./12_chapter_function_closure/) | Scope, closures, execution context, real examples | 5 |
-| 13 | [Strings](./13_string/) | Searching, slicing, templates, string methods | 8 |
-| 15 | [Multi-dimensional Arrays](./15_multi_dimensions_array/) | 2D arrays, nested loops, pattern printing | 6 |
+| 10 | [Arrays](./10_chapter_arrays/) | CRUD, search, sort, slice, concat, destructuring, spread | 16 |
+| 11 | [Functions](./11_chapter_functions/) | All 4 function types, arrow fns, hoisting, TDZ, IIFE | 24 |
+| 12 | [Function Closures](./12_chapter_function_closures/) | Scope, closures, execution context, real examples | 5 |
+| 13 | [Strings](./13_chapter_strings/) | Searching, slicing, templates, string methods | 8 |
+| 14 | [Objects](./14_chapter_objects/) | Object creation, methods, config, call by value/ref | 6 |
+| 15 | [Multi-dimensional Arrays](./15_chapter_multi_dim_arrays/) | 2D arrays, nested loops, pattern printing | 6 |
 
-> **Total: 120 lesson files** across 13 chapters.
+> **Total: 131 lesson files** across 15 chapters.
 
 ---
 
@@ -79,7 +81,7 @@ Quick-reference cards that break down tricky concepts in structured comparison t
 | Note | Concept |
 |------|---------|
 | [source-vs-bytecode-vs-binary.md](./iq-notes/source-vs-bytecode-vs-binary.md) | Source Code vs Byte Code vs Machine Code |
-| [102_hoisting_tbz.md](./11_chapter_function/102_hoisting_tbz.md) | JavaScript Hoisting — `var`, `let`, `const`, functions, classes |
+| [102_hoisting_tbz.md](./11_chapter_functions/102_hoisting_tbz.md) | JavaScript Hoisting — `var`, `let`, `const`, functions, classes |
 
 ---
 
@@ -89,9 +91,9 @@ Quick-reference cards that break down tricky concepts in structured comparison t
 
 ```bash
 # Run any lesson file
-node 01_chapter_javascript/01-hello-world.js
-node 11_chapter_function/93_hoisting.js
-node 10_chapter_Arrays/79_destructing.js
+node 01_chapter_hello_world/01-hello-world.js
+node 11_chapter_functions/93_hoisting.js
+node 10_chapter_arrays/79_destructing.js
 ```
 
 ---
@@ -112,10 +114,10 @@ node 10_chapter_Arrays/79_destructing.js
 - [x] Functions — all types, hoisting, TDZ, `var` vs `let` vs `const`
 - [x] Function Closures — scope, lexical environment, closures, real examples
 - [x] Strings — searching, slicing, templates
+- [x] Objects — creation, methods, `this`, call by value vs reference
 - [x] Multi-dimensional arrays — nested arrays, matrix loops, print patterns
 
 ### 🔜 Up Next
-- [ ] Objects — creation, methods, `this`, destructuring
 - [ ] Prototypes & Inheritance
 - [ ] ES6+ — Classes, Modules (`import`/`export`)
 - [ ] Async JavaScript — callbacks, Promises, `async/await`
