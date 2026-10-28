@@ -2,8 +2,8 @@
 
 > Hands-on, chapter-by-chapter JavaScript curriculum with practical code examples, deep-dive notes, and interview preparation.
 
-[![Chapters](https://img.shields.io/badge/Chapters-17%20Completed-brightgreen?style=flat-square)](#-curriculum)
-[![Lessons](https://img.shields.io/badge/Lessons-147%2B%20Files-blue?style=flat-square)](#-curriculum)
+[![Chapters](https://img.shields.io/badge/Chapters-18%20Completed-brightgreen?style=flat-square)](#-curriculum)
+[![Lessons](https://img.shields.io/badge/Lessons-154%2B%20Files-blue?style=flat-square)](#-curriculum)
 [![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
@@ -31,6 +31,8 @@ node 01_chapter_hello_world/01-hello-world.js
 node 11_chapter_functions/93_hoisting.js
 node 16_callback/131_async_callback.js
 node 17_promise/136_promise.js
+node 20_async_await/151_sequential_execution.js
+node 20_async_await/152_parallel_execution.js
 ```
 
 ---
@@ -56,8 +58,9 @@ node 17_promise/136_promise.js
 | 15 | [Multi-dimensional Arrays](./15_chapter_multi_dim_arrays/) | 2D matrices, nested loops, pattern printing | 6 |
 | 16 | [Callbacks](./16_callback/) | Synchronous vs asynchronous callbacks, inversion of control, callback hell | 8 |
 | 17 | [Promises](./17_promise/) | Promise lifecycle, `.then/.catch/.finally`, chaining, `all`, `allSettled`, `race` | 11 |
+| 20 | [Async / Await](./20_async_await/) | `async` functions, `await`, `try/catch/finally`, sequential vs parallel, retry pattern, event loop order | 9 |
 
-> **Total:** 147 core lesson files across 17 chapters + HackerRank problem sets.
+> **Total:** 154 core lesson files across 18 chapters + HackerRank problem sets.
 
 ---
 
@@ -71,6 +74,8 @@ In-depth comparison cards and interview reference guides:
 | [Hoisting & Temporal Dead Zone](./11_chapter_functions/102_hoisting_tbz.md) | `var` vs `let` vs `const`, function & class hoisting |
 | [Callback Guide & Interview Notes](./16_callback/CALLBACK_NOTES.md) | Callbacks, pyramid of doom, interview questions |
 | [Promise Guide & Interview Notes](./17_promise/PROMISE_NOTES.md) | Promise states, static methods, interview walkthrough |
+| [Async/Await Notes](./20_async_await/async_await_notes.md) | `async/await` patterns, sequential vs parallel, retry, event loop |
+| [Async/Await Interview Guide](./20_async_await/async_await_interview.md) | Step-by-step verbal answers, analogies, follow-up Q&A |
 
 ---
 
@@ -81,9 +86,9 @@ In-depth comparison cards and interview reference guides:
 - [x] **Data Structures** (Chapters 10, 13–15: Arrays, Strings, Objects, 2D Arrays)
 - [x] **Functions & Scope** (Chapters 11–12: Function types, Hoisting, Closures, Execution Context)
 - [x] **Asynchronous Foundations** (Chapters 16–17: Callbacks, Promises, Concurrency methods)
+- [x] **Async / Await** (Chapter 20: `async/await`, sequential vs parallel, retry pattern, event loop, Playwright integration)
 
 ### Upcoming Milestones
-- [ ] **Async / Await** (Modern promise consumption & clean flow)
 - [ ] **Error Handling** (`try / catch / finally`, custom error classes)
 - [ ] **OOP & Prototypes** (Prototypes, prototype chain, ES6 Classes)
 - [ ] **Modules** (ESM `import` / `export` vs CommonJS `require`)
@@ -156,6 +161,28 @@ const add = (a, b) => a + b;
 | **`Promise.all`** | Resolves when all succeed; fails immediately if any promise rejects |
 | **`Promise.allSettled`** | Waits for all promises to settle regardless of outcome |
 | **`Promise.race`** | Settles with the outcome of the fastest promise |
+
+</details>
+
+<details>
+<summary><strong>5. Async / Await Summary</strong></summary>
+
+| Concept | Key Point |
+|:---|:---|
+| **`async` function** | Always returns a Promise, even if you return a plain value |
+| **`await`** | Pauses the async function until the Promise resolves; only works inside `async` |
+| **Error handling** | Use `try/catch/finally` instead of `.catch()` |
+| **Sequential** | `await` one by one — use when Step 2 depends on Step 1's result |
+| **Parallel** | `Promise.all([fn1(), fn2()])` — use when steps are independent (much faster!) |
+| **Event loop order** | Code after `await` defers to the microtask queue — sync code runs first |
+| **Retry pattern** | Loop with `try/catch` — re-attempt on failure up to `maxRetries` |
+
+```js
+// Sequential (3s total)             // Parallel (1s total)
+const r1 = await apiCall("A");       const [r1, r2, r3] = await Promise.all([
+const r2 = await apiCall("B");         apiCall("A"), apiCall("B"), apiCall("C")
+const r3 = await apiCall("C");       ]);
+```
 
 </details>
 
