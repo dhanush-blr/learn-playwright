@@ -365,4 +365,3 @@ for (let i = 0; i < maxRetries; i++) {
 - Use **`Promise.all`** when steps are independent (faster!)
 - Use `try/catch/finally` for error handling
 - After `await`, even a resolved Promise runs **after** synchronous code (microtask queue)
-

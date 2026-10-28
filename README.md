@@ -31,8 +31,8 @@ node 01_chapter_hello_world/01-hello-world.js
 node 11_chapter_functions/93_hoisting.js
 node 16_callback/131_async_callback.js
 node 17_promise/136_promise.js
-node 20_async_await/151_sequential_execution.js
-node 20_async_await/152_parallel_execution.js
+node 18_async_await/151_sequential_execution.js
+node 18_async_await/152_parallel_execution.js
 ```
 
 ---
@@ -58,7 +58,7 @@ node 20_async_await/152_parallel_execution.js
 | 15 | [Multi-dimensional Arrays](./15_chapter_multi_dim_arrays/) | 2D matrices, nested loops, pattern printing | 6 |
 | 16 | [Callbacks](./16_callback/) | Synchronous vs asynchronous callbacks, inversion of control, callback hell | 8 |
 | 17 | [Promises](./17_promise/) | Promise lifecycle, `.then/.catch/.finally`, chaining, `all`, `allSettled`, `race` | 11 |
-| 20 | [Async / Await](./20_async_await/) | `async` functions, `await`, `try/catch/finally`, sequential vs parallel, retry pattern, event loop order | 8 |
+| 18 | [Async / Await](./18_async_await/) | `async` functions, `await`, `try/catch/finally`, sequential vs parallel, retry pattern, event loop order | 8 |
 
 > **Total:** 153 core lesson files across 18 chapters + HackerRank problem sets.
 
@@ -74,7 +74,7 @@ In-depth comparison cards and interview reference guides:
 | [Hoisting & Temporal Dead Zone](./11_chapter_functions/102_hoisting_tbz.md) | `var` vs `let` vs `const`, function & class hoisting |
 | [Callback Guide & Interview Notes](./16_callback/CALLBACK_NOTES.md) | Callbacks, pyramid of doom, interview questions |
 | [Promise Guide & Interview Notes](./17_promise/PROMISE_NOTES.md) | Promise states, static methods, interview walkthrough |
-| [Async/Await Notes](./20_async_await/async_await_notes.md) | `async/await` patterns, sequential vs parallel, retry, event loop |
+| [Async/Await Notes](./18_async_await/async_await_notes.md) | `async/await` patterns, sequential vs parallel, retry, event loop |
 
 ---
 
